@@ -39,7 +39,7 @@ public class TTTBoardSoln {
 		}
 			
 		if (board[row][col] != '.') {
-			throw new IllegalArgumentException("Location is not emtpy.");
+			throw new IllegalArgumentException("Location is not empty.");
 		}
 		
 		board[row][col] = mark;

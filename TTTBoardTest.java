@@ -5,11 +5,11 @@ import org.junit.Test;
 
 public class TTTBoardTest {
 
-	private TTTBoardSoln b;
+	private TTTBoard b;
 	
 	@Before
 	public void setup() {
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 	}
 	
 	@Test
@@ -198,7 +198,7 @@ public class TTTBoardTest {
 		b.placeMark(0, 2, 'x');
 		assertEquals("x has won.", 'x', b.rowWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("x has not won", '\0', b.rowWinner());
 		b.placeMark(1, 0, 'x');
 		assertEquals("x has not won", '\0', b.rowWinner());
@@ -207,7 +207,7 @@ public class TTTBoardTest {
 		b.placeMark(1, 2, 'x');
 		assertEquals("x has won.", 'x', b.rowWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("x has not won", '\0', b.rowWinner());
 		b.placeMark(2, 0, 'x');
 		assertEquals("x has not won", '\0', b.rowWinner());
@@ -227,7 +227,7 @@ public class TTTBoardTest {
 		b.placeMark(0, 2, 'o');
 		assertEquals("o has won.", 'o', b.rowWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("o has not won", '\0', b.rowWinner());
 		b.placeMark(1, 0, 'o');
 		assertEquals("o has not won", '\0', b.rowWinner());
@@ -236,7 +236,7 @@ public class TTTBoardTest {
 		b.placeMark(1, 2, 'o');
 		assertEquals("o has won.", 'o', b.rowWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("o has not won", '\0', b.rowWinner());
 		b.placeMark(2, 0, 'o');
 		assertEquals("o has not won", '\0', b.rowWinner());
@@ -256,7 +256,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 0, 'x');
 		assertEquals("x has won.", 'x', b.colWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("x has not won", '\0', b.colWinner());
 		b.placeMark(0, 1, 'x');
 		assertEquals("x has not won", '\0', b.colWinner());
@@ -265,7 +265,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 1, 'x');
 		assertEquals("x has won.", 'x', b.colWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("x has not won", '\0', b.colWinner());
 		b.placeMark(0, 2, 'x');
 		assertEquals("x has not won", '\0', b.colWinner());
@@ -285,7 +285,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 0, 'o');
 		assertEquals("o has won.", 'o', b.colWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("o has not won", '\0', b.colWinner());
 		b.placeMark(0, 1, 'o');
 		assertEquals("o has not won", '\0', b.colWinner());
@@ -294,7 +294,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 1, 'o');
 		assertEquals("o has won.", 'o', b.colWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("o has not won", '\0', b.colWinner());
 		b.placeMark(0, 2, 'o');
 		assertEquals("o has not won", '\0', b.colWinner());
@@ -314,7 +314,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 2, 'x');
 		assertEquals("x has won.", 'x', b.diagLeftToRightWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("x has not won", '\0', b.diagRightToLeftWinner());
 		b.placeMark(0, 2, 'x');
 		assertEquals("x has not won", '\0', b.diagRightToLeftWinner());
@@ -334,7 +334,7 @@ public class TTTBoardTest {
 		b.placeMark(2, 2, 'o');
 		assertEquals("o has won.", 'o', b.diagLeftToRightWinner());
 		
-		b = new TTTBoardSoln();
+		b = new TTTBoard();
 		assertEquals("o has not won", '\0', b.diagRightToLeftWinner());
 		b.placeMark(0, 2, 'o');
 		assertEquals("o has not won", '\0', b.diagRightToLeftWinner());

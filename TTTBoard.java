@@ -147,7 +147,7 @@ public class TTTBoardSoln {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char diagWinner() {
-		return (char) (diagLeftToRightWinner() | diagRightToLeftWinner());
+		return '\0';
 	}
 	
 	/**
@@ -156,6 +156,6 @@ public class TTTBoardSoln {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char winner() {
-		return (char) (rowWinner() | colWinner() | diagWinner());
+		return '\0';
 	}
 }

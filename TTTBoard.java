@@ -3,13 +3,13 @@
  * particularly clever implementation of winner checking. However, it is good
  * for illustrating the use of Git/GitHub.
  */
-public class TTTBoard {
+public class TTTBoardSoln {
 	private char[][] board;
 
 	/**
 	 * Construct an empty TTT board.
 	 */
-	public TTTBoard() {
+	public TTTBoardSoln() {
 		board = new char[3][3];
 		for (int r = 0; r < 3; r++) {
 			for (int c = 0; c < 3; c++) {
@@ -66,13 +66,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char row1winner() {
-		if (board[1][0] == 'x' && board[1][1] == 'x' && board[1][2] == 'x') {
-			return 'x';
-		} else if (board[1][0] == 'o' && board[1][1] == 'o' && board[1][2] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -81,13 +75,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char row2winner() {
-		if (board[2][0] == 'x' && board[2][1] == 'x' && board[2][2] == 'x') {
-			return 'x';
-		} else if (board[2][0] == 'o' && board[2][1] == 'o' && board[2][2] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -96,13 +84,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col0winner() {
-		if (board[0][0] == 'x' && board[1][0] == 'x' && board[2][0] == 'x') {
-			return 'x';
-		} else if (board[0][0] == 'o' && board[1][0] == 'o' && board[2][0] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -111,13 +93,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col1winner() {
-		if (board[0][1] == 'x' && board[1][1] == 'x' && board[2][1] == 'x') {
-			return 'x';
-		} else if (board[0][1] == 'o' && board[1][1] == 'o' && board[2][1] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -126,13 +102,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col2winner() {
-		if (board[0][2] == 'x' && board[1][2] == 'x' && board[2][2] == 'x') {
-			return 'x';
-		} else if (board[0][2] == 'o' && board[1][2] == 'o' && board[2][2] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -141,13 +111,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char diagLeftToRightWinner() {
-		if (board[0][0] == 'x' && board[1][1] == 'x' && board[2][2] == 'x') {
-			return 'x';
-		} else if (board[0][0] == 'o' && board[1][1] == 'o' && board[2][2] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -156,13 +120,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char diagRightToLeftWinner() {
-		if (board[0][2] == 'x' && board[1][1] == 'x' && board[2][0] == 'x') {
-			return 'x';
-		} else if (board[0][2] == 'o' && board[1][1] == 'o' && board[2][0] == 'o') {
-			return 'o';
-		} else {
-			return '\0';
-		}
+		return '\0';
 	}
 
 	/**
@@ -171,7 +129,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char rowWinner() {
-		return (char) (row0winner() | row1winner() | row2winner());
+		return '\0';
 	}
 
 	/**
@@ -180,7 +138,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char colWinner() {
-		return (char) (col0winner() | col1winner() | col2winner());
+		return '\0';
 	}
 
 	/**

@@ -13,4 +13,4 @@ this relatively painless.
 6. Assign each Part 2 issue to multiple participants. The instructor will make a concurrent change by copying code from the solution while participants work on these issues. Pull requests will generate merge conflicts. Participants will then pull changes, resolve conflict and reissue pull request.  Instructor can then merge one.
 
 Additional details, slides and in class handout are available from
-[Dickinson College COMP491|http://users.dickinson.edu/~braught/courses/cs491f17/cs491f17.html] or more specifically in the Hands-on section of the [Version Control|http://users.dickinson.edu/~braught/courses/cs491f17/cs491f17.html#0918] day.
+[Dickinson College COMP491](http://users.dickinson.edu/~braught/courses/cs491f17/cs491f17.html) or more specifically in the Hands-on section of the [Version Control](http://users.dickinson.edu/~braught/courses/cs491f17/cs491f17.html#0918) day.

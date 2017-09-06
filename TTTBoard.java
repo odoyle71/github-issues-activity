@@ -9,7 +9,7 @@ public class TTTBoard {
 	/**
 	 * Construct an empty TTT board.
 	 */
-	public TTTBoardSoln() {
+	public TTTBoard() {
 		board = new char[3][3];
 		for (int r = 0; r < 3; r++) {
 			for (int c = 0; c < 3; c++) {

@@ -3,7 +3,7 @@
  * particularly clever implementation of winner checking. However, it is good
  * for illustrating the use of Git/GitHub.
  */
-public class TTTBoard {
+public class TTTBoardSoln {
 	private char[][] board;
 
 	/**

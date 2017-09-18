@@ -102,7 +102,13 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char col2winner() {
-		return '\0';
+		if (board[0][2] == 'x' && board[1][2] == 'x' && board[2][2] == 'x') {
+			return 'x';
+		} else if (board[0][2] == 'o' && board[1][2] == 'o' && board[2][2] == 'o') {
+			return 'o';
+		} else {
+			return '\0';
+		}
 	}
 
 	/**

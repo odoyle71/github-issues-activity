@@ -189,11 +189,15 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char diagWinner() {
+<<<<<<< 736a91c0373de0060b22290e0f148de4486aa72a
+		return ‘z’;
+=======
 		if(diagRightToLeftWinner()=='x' || diagLeftToRightWinner()=='x'){
 		return 'x';
 	}
 		else if(diagRightToLeftWinner()=='o' || diagLeftToRightWinner()=='o'){
 		return 'o';
+>>>>>>> fixed diagwinner
 	}
 		else{
 		return '\0'

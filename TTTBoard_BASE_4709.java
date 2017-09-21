@@ -171,7 +171,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char rowWinner() {
-		return ‘z’;
+		return '\0';
 	}
 
 	/**
@@ -180,7 +180,7 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char colWinner() {
-		return ‘z’;
+		return '\0';
 	}
 
 	/**
@@ -189,15 +189,8 @@ public class TTTBoard {
 	 * @return 'x' if x wins, 'o' if o wins, and null (i.e. '\0') otherwise.
 	 */
 	public char diagWinner() {
-		if(diagRightToLeftWinner()=='x' || diagLeftToRightWinner()=='x'){
-		return 'x';
+		return '\0';
 	}
-		else if(diagRightToLeftWinner()=='o' || diagLeftToRightWinner()=='o'){
-		return 'o';
-	}
-		else{
-		return '\0'
-	}}
 	
 	/**
 	 * Check if there is a winner on the board.
